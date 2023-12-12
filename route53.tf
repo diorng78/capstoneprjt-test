@@ -1,5 +1,5 @@
 # AWS Route53 zone data source with the domain name and private zone set to false
-data "aws_route53_zone" "zone" {
+data "aws_route53_zone" "group1" {
   provider = aws.use_default_region
   name         = var.domain-name
   private_zone = false
