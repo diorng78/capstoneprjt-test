@@ -1,6 +1,6 @@
 # S3 bucket name
 variable "bucket-name" {
-  default = "ramesh-sctp"
+  default = "{}"
 }
 
 # Domain name that you have registered
