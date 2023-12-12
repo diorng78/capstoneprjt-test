@@ -53,5 +53,5 @@ resource "aws_cloudfront_origin_access_control" "default" {
 
 # Output the CloudFront distribution URL using the domain name of the cdn_static_website resource.
 output "cloudfront_url" {
-  value = "http://${aws_s3_bucket.my-static-website.bucket}.s3-website.us-east-1.amazonaws.com"
+  value = "example.com"
 }
