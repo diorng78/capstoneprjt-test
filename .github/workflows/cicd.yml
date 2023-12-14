@@ -57,7 +57,7 @@ jobs:
           terraform workspace list
     
       - name: Terraform plan
-        run: terraform plan - terraform plan -var-file=dev.tfvars -debug
+        run: terraform plan - terraform plan -var-file=.tfvars -debug
 
       - name: Install Snyk CLI
         run: npm install -g snyk
