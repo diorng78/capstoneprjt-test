@@ -18,7 +18,7 @@ resource "aws_cloudfront_distribution" "cdn_static_website" {
 
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "Ramesh-s3-origin"
+    target_origin_id = "ramesh-s3-origin"
 
     forwarded_values {
       query_string = false
