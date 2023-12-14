@@ -57,9 +57,7 @@ jobs:
           terraform workspace list
     
       - name: Terraform plan
-        run: terraform plan -var-file=${{github.base_ref || github.ref_name}}.tfvars
-         terraform plan -var-file=dev.tfvars -timeout=30m
-         terraform plan -var-file=dev.tfvars -debug
+        run: terraform plan -var-file=${{github.base_ref || github.ref_name}}.tfvars -timeout=30m -debug
 
       - name: Install Snyk CLI
         run: npm install -g snyk
