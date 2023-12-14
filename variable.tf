@@ -1,4 +1,4 @@
-variable "bucket_env" {}
-variable "bucket_name" {}
+variable "bucket-env" {}
+variable "bucket-name" {}
 variable "domain-name" {}
 
