@@ -1,9 +1,9 @@
 # ACM certificate resource with the domain name and DNS validation method, supporting subject alternative names
 resource "aws_acm_certificate" "cert" {
   provider = aws.use_default_region
-  domain_name               = var.domain-name
+  domain_name               = var.domain_name
   validation_method         = "DNS"
-  subject_alternative_names = [var.domain-name]
+  subject_alternative_names = [var.domain_name]
 
   lifecycle {
     create_before_destroy = true

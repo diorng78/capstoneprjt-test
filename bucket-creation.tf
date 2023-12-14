@@ -1,6 +1,6 @@
 # Creating S3 bucket and apply force destroy So, when going to destroy it won't throw error 'Bucket is not empty'
 resource "aws_s3_bucket" "s3-bucket" {
-  bucket = var.bucket-name
+  bucket = var.bucket_name
   # force_destroy = true
   lifecycle {
     prevent_destroy = false
